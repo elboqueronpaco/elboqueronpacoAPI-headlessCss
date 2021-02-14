@@ -1,0 +1,45 @@
+{
+  "name": "elboqueronpacoapi",
+  "version": "1.0.0",
+  "description": "Creacion headles css",
+  "main": "index.js",
+  "scripts": {
+    "dev": "ts-node src/index.ts",
+    "start": "ts-node dist/index.js",
+    "build": "tsc -p .",
+    "lint": "eslint . --ext .js,.tsx,.ts"
+  },
+  "repository": "https://github.com/elboqueronpaco/elboqueronpacoAPI-headlessCss.git",
+  "author": "elboqueronpaco <elboqueronpaco@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "@types/express": "^4.17.11",
+    "@types/jest": "^26.0.20",
+    "@types/jsonwebtoken": "^8.5.0",
+    "@types/node": "^14.14.27",
+    "@types/sequelize": "^4.28.9",
+    "@typescript-eslint/eslint-plugin": "^4.15.0",
+    "@typescript-eslint/parser": "^4.15.0",
+    "eslint": "^7.20.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-prettier": "^3.3.1",
+    "prettier": "^2.2.1",
+    "sequelize-mock": "^0.10.2",
+    "tslint": "^6.1.3",
+    "typescript": "^4.1.5"
+  },
+  "dependencies": {
+    "apollo-server": "^2.21.0",
+    "express": "^4.17.1",
+    "fogg-utils": "^2.7.5",
+    "jsonwebtoken": "^8.5.1",
+    "merge-graphql-schemas-ts": "^1.1.4",
+    "pg": "^8.5.1",
+    "pg-hstore": "^2.3.3",
+    "sequelize": "^6.5.0",
+    "sequelize-typescript": "^2.0.0",
+    "ts-node": "^9.1.1"
+  }
+}

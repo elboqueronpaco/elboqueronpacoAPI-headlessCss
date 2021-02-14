@@ -1,0 +1,17 @@
+{
+  "server": {
+    "port": 5000
+  },
+  "db": {
+    "dialect": "postgres",
+    "port": 5432,
+    "host": "localhost",
+    "database": "databaseDB",
+    "username": "postgres",
+    "password": "passworDB"
+  },
+  "security":{
+    "secretKey": "secret",
+    "expiresIn": "7d"
+  }
+}
