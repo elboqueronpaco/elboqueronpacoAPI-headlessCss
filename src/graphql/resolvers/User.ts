@@ -1,4 +1,5 @@
-import { iCreateUserInput, iModels, iUser } from "interfaces";
+import { iAuthPayload, iCreateUserInput, iLoginInput, iModels, iUser } from "interfaces";
+import { doLogin } from '../../libs/auth'
 
 export default {
   Query: {
@@ -13,6 +14,11 @@ export default {
       _: object,
       { input}: { input: iCreateUserInput},
       { models }: { models: iModels }
-    ): iUser => models.User.create({...input})
+    ): iUser => models.User.create({...input}),
+    login: (
+      _: object,
+      {input}: { input: iLoginInput},
+      { models }: { models: iModels}
+    ): Promise<iAuthPayload> => doLogin(input.email, input.password, models)
   }
 }
